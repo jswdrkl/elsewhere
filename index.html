@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="mr" class="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>इतरत्र – अन्यथा – elsewhere आणि.. Appreciation..</title>
+  
+  <!-- IBM Plex Sans & IBM Plex Sans Devanagari for clean, beautiful bilingual Marathi & English typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:wght@300;400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            ibm: ['"IBM Plex Sans Devanagari"', '"IBM Plex Sans"', 'sans-serif'],
+          },
+          colors: {
+            page: {
+              light: '#fbf9f5',
+              card: '#ffffff',
+              dark: '#121417',
+              darkcard: '#1a1d24'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'IBM Plex Sans Devanagari', 'IBM Plex Sans', sans-serif;
+      word-break: normal;
+      overflow-wrap: break-word;
+      hyphens: none;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .body-justified {
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    /* Subtle animated SVG keyframes */
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.75; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.06); }
+    }
+
+    @keyframes floatGentle {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-7px) rotate(1.5deg); }
+    }
+
+    @keyframes floatDrift {
+      0%, 100% { transform: translate(0px, 0px); }
+      50% { transform: translate(8px, -5px); }
+    }
+
+    @keyframes beamFlow {
+      0% { stroke-dashoffset: 80; opacity: 0.3; }
+      50% { opacity: 0.9; }
+      100% { stroke-dashoffset: 0; opacity: 0.3; }
+    }
+
+    .anim-glow {
+      transform-origin: center;
+      animation: pulseGlow 5s ease-in-out infinite;
+    }
+
+    .anim-float-1 {
+      transform-origin: center;
+      animation: floatGentle 6s ease-in-out infinite;
+    }
+
+    .anim-float-2 {
+      transform-origin: center;
+      animation: floatDrift 7s ease-in-out infinite;
+    }
+
+    .anim-beam {
+      stroke-dasharray: 8 6;
+      animation: beamFlow 10s linear infinite;
+    }
+  </style>
+</head>
+<body class="bg-[#faf7f2] dark:bg-[#111317] text-[#292524] dark:text-[#e7e5e4] min-h-screen py-6 sm:py-12 px-4 sm:px-6 flex flex-col items-center justify-between">
+
+  <header class="w-full max-w-2xl flex justify-end mb-4">
+    <button id="themeToggleBtn" aria-label="Toggle theme" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-medium bg-stone-200/80 dark:bg-stone-800 text-stone-700 dark:text-stone-300 hover:bg-stone-300 dark:hover:bg-stone-700 shadow-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-amber-500/50">
+      <span id="themeIcon">
+        <svg class="w-4 h-4 hidden dark:inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 9h-1m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+        <svg class="w-4 h-4 inline-block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" /></svg>
+      </span>
+      <span id="themeLabel">Dark Mode</span>
+    </button>
+  </header>
+
+  <main class="w-full max-w-2xl bg-white/95 dark:bg-[#1a1d24]/95 rounded-2xl shadow-xl shadow-stone-200/60 dark:shadow-black/50 border border-stone-200/70 dark:border-stone-800/80 p-6 sm:p-10 md:p-12 transition-colors duration-300">
+    
+    <div class="w-full flex justify-center mb-8 sm:mb-10">
+      <svg class="w-full max-w-md h-auto" viewBox="0 0 520 180" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="इतरत्र आणि Appreciation कलात्मक चित्रण">
+        <defs>
+          <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.95" />
+            <stop offset="45%" stop-color="#f59e0b" stop-opacity="0.65" />
+            <stop offset="100%" stop-color="#d97706" stop-opacity="0" />
+          </radialGradient>
+          <linearGradient id="presentGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#10b981" />
+            <stop offset="100%" stop-color="#059669" />
+          </linearGradient>
+          <linearGradient id="elsewhereGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#818cf8" />
+            <stop offset="100%" stop-color="#6366f1" />
+          </linearGradient>
+          <linearGradient id="cloudGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.35" />
+            <stop offset="100%" stop-color="#a855f7" stop-opacity="0.1" />
+          </linearGradient>
+          <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="6" result="blur" />
+            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+          </filter>
+        </defs>
+
+        <!-- Ambient background aura -->
+        <ellipse cx="260" cy="90" rx="210" ry="70" fill="url(#cloudGrad)" />
+
+        <!-- Horizon connecting Present and Elsewhere -->
+        <path d="M 50 120 Q 260 95 470 120" stroke="#cbd5e1" class="dark:stroke-stone-700" stroke-width="1.8" stroke-dasharray="3 4" opacity="0.6" />
+        
+        <!-- Animated Connecting Stream (Thoughts drifting from Here to Elsewhere) -->
+        <path d="M 140 100 C 200 65, 320 65, 380 98" stroke="#f59e0b" stroke-width="2" fill="none" class="anim-beam" filter="url(#softGlow)" />
+
+        <!-- Left Node: 'Here & Now' / कृतज्ञतेचा आधार (Appreciation & Present Light) -->
+        <g class="anim-glow" style="transform-origin: 140px 100px;">
+          <circle cx="140" cy="100" r="46" fill="url(#sunGlow)" />
+          <circle cx="140" cy="100" r="22" fill="url(#presentGrad)" />
+          <!-- Inner warm lotus/spark motif -->
+          <circle cx="140" cy="100" r="10" fill="#fef3c7" />
+          <path d="M 140 85 L 140 115 M 125 100 L 155 100" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.9" />
+          <circle cx="140" cy="100" r="3" fill="#d97706" />
+        </g>
+        
+        <!-- Gentle floating particles around appreciation -->
+        <circle cx="112" cy="74" r="3" fill="#f59e0b" class="anim-float-1" opacity="0.8" />
+        <circle cx="170" cy="80" r="2.5" fill="#10b981" class="anim-float-2" opacity="0.85" />
+        <circle cx="155" cy="126" r="3" fill="#fcd34d" class="anim-float-1" opacity="0.75" />
+
+        <!-- Right Node: 'Elsewhere' / दूरवरचे स्वप्न, अन्यत्र (Distant Horizon & Discovery) -->
+        <g class="anim-float-1" style="transform-origin: 380px 100px;">
+          <!-- Distant rings / ripples -->
+          <circle cx="380" cy="100" r="34" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="4 4" fill="none" opacity="0.5" />
+          <circle cx="380" cy="100" r="24" fill="url(#elsewhereGrad)" opacity="0.9" />
+          <!-- Star/Compass marker in elsewhere -->
+          <path d="M 380 88 L 382.5 97.5 L 392 100 L 382.5 102.5 L 380 112 L 377.5 102.5 L 368 100 L 377.5 97.5 Z" fill="#ffffff" />
+        </g>
+
+        <!-- Gentle clouds / wandering mirage paths -->
+        <g class="anim-float-2" opacity="0.65">
+          <ellipse cx="260" cy="62" rx="42" ry="12" fill="#c084fc" opacity="0.3" />
+          <circle cx="276" cy="56" r="8" fill="#818cf8" opacity="0.35" />
+          <circle cx="248" cy="58" r="9" fill="#38bdf8" opacity="0.3" />
+        </g>
+
+        <!-- Artistic Sanskrit / Symbolic Accents -->
+        <text x="140" y="148" text-anchor="middle" font-size="11.5" font-family="'IBM Plex Sans Devanagari', sans-serif" font-weight="600" fill="#059669" class="dark:fill-emerald-400">आहे ते • कृतज्ञता</text>
+        <text x="380" y="148" text-anchor="middle" font-size="11.5" font-family="'IBM Plex Sans', sans-serif" font-weight="500" fill="#6366f1" class="dark:fill-indigo-300">इतरत्र • elsewhere</text>
+      </svg>
+    </div>
+
+    <div class="text-center mb-8 space-y-2">
+      <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-stone-900 dark:text-stone-100 leading-snug">
+        इतरत्र – अन्यथा – elsewhere आणि..
+      </h1>
+      <p class="text-xl sm:text-2xl font-semibold text-amber-700 dark:text-amber-400 tracking-wide">
+        Appreciation..
+      </p>
+    </div>
+
+    <div class="space-y-5 text-base sm:text-lg leading-relaxed text-stone-800 dark:text-stone-200">
+      <p class="body-justified">
+        मानसिक स्वास्थ्य मिळवण्याच्या प्रवासात ‘जे आहे ते; जसे आहे तसे’ स्वीकारण्याला खूप महत्व आहे. त्यासाठी अंगी मुरवलेली ‘कृतज्ञ राहण्याची’ सवय या मार्गावर कोणालाही खूप पुढे घेऊन जाते.
+      </p>
+
+      <p class="body-justified">
+        कृतज्ञतेच्या या प्रवासाची पहिली पायरी आहे ‘appreciation’. अर्थात ‘आहे त्या’ गोष्टीचा आनंद लुटणे किंवा एखाद्या व्यक्तीचे/गोष्टीचे/परिस्थितीचे महत्त्व ओळखणे, त्याची किंमत जोखणे.
+      </p>
+
+      <div class="text-center text-amber-600 dark:text-amber-500 text-lg sm:text-xl tracking-widest py-3 select-none" aria-hidden="true">
+        ⛯⛯⛯
+      </div>
+
+      <p class="body-justified">
+        काहीही ‘appreciate’ करण्यासाठी सर्वप्रथम मनुष्यस्वभावाच्या ‘अन्यथा, अन्यत्र, इतरत्र’ ज्याला इंग्रजीत ‘elsewhereism’ म्हणता येईल या सहजप्रवृत्तीचा नीट विचार करायला हवा.
+      </p>
+
+      <p class="body-justified">
+        ‘elsewhereism’ म्हणजे एक असे विस्मरण ज्यामध्ये त्या नव्या, चांगल्या आणि हव्याहव्याश्या वाटणाऱ्या ‘elsewhere’ मधे देखील विविध अडचणी, अपघात, निराशा, वैगुण्ये असू शकतात; आता दिसत नसली तरी उद्भवू शकतात याकडे दुर्लक्ष करणे होय.
+      </p>
+
+      <p class="body-justified">
+        इतरत्र चांगले असेल किंवा होईल असे वाटणे नैसर्गिक आहे, पण फक्त आत्ता आहे त्या परिस्थितीत बदल हवा(च) म्हणून ‘इतरत्रते’चा विचार करताना आपण झापडे लावून मृगजळामागे तर धावत नाही ना? यावर चिंतन व्हायला हवे.
+      </p>
+
+      <p class="body-justified">
+        याचा अर्थ असा अजिबात घ्यायचा नाही की जे आहे तेच कायम योग्य असते. आहे त्यापेक्षा अन्यत्र / इतरत्र / elsewhere काही वेगळे, सोपे आणि चांगले असू शकते, नक्कीच असू शकते. त्यासाठी ‘असेल हरी तर..’ या म्हणीनुसार प्रयत्नच करायचे नाहीत असे सुचवण्याचा उद्देश ‘elsewhereism’ हा शब्दप्रयोग करण्यामागे नाही.
+      </p>
+
+      <p class="body-justified">
+        आहे त्या स्थितीला ‘appreciate’ करता आले नाही किंवा केले नाही तर त्यामागचे महत्व न कळल्यामुळे भविष्यात कशालाच ‘appreciate’ करता येणार नाही. In fact, असे काही करायचे असते हेच कधी उमगणार नाही. पण आहे ते ‘appreciate’ करणे जर का जमले तर त्या ‘elsewhere’ मधील हव्याश्या वाटणाऱ्या चांगल्या गोष्टी आहे त्या वर्तमानात प्रत्यक्षात आणण्यासाठी नक्की काय करायला हवे ते समजणे सोपे होईल.
+      </p>
+
+      <p class="body-justified">
+        थोडक्यात, वर्तमानात अडचणी दिसल्या/जाणवल्या की साहजिक मनात येणाऱ्या इतरत्र, अन्यत्र, अन्यथा, elsewhere या शब्दांवर घाईत काही कृती करण्यापूर्वी जे आहे त्याबद्दल वर्तमानात राहून नीट चिंतन करण्यापासून सुरुवात करणे श्रेयस्कर.
+      </p>
+
+      <div class="my-8 py-5 px-4 bg-stone-100/70 dark:bg-stone-800/40 rounded-xl space-y-2.5 text-center">
+        <p class="font-medium text-stone-900 dark:text-stone-100">‘दूरून डोंगर साजरे’</p>
+        <p class="font-medium text-stone-900 dark:text-stone-100">‘हातचे सोडून पळत्यामागे धावण्यात हशील नाही’</p>
+        <p class="font-medium text-stone-900 dark:text-stone-100">‘तेलही गेले, तूपही गेले, हाती उरले धुपाटणे’</p>
+        <p class="font-medium text-stone-900 dark:text-stone-100">‘घरोघरी मातीच्या चुली’</p>
+      </div>
+
+      <p class="text-center font-medium text-stone-900 dark:text-stone-100">
+        या म्हणींचा ‘भावार्थ’ - message between the lines म्हणजे appreciation!
+      </p>
+
+      <p class="text-center italic text-stone-700 dark:text-stone-300 py-2">
+        Before dreaming of that ‘elsewhere’, it is always better to ‘appreciate’ what one has; in the present.
+      </p>
+
+      <div class="text-center text-amber-600 dark:text-amber-500 text-lg sm:text-xl tracking-widest pt-3 pb-1 select-none" aria-hidden="true">
+        ⛯⛯⛯
+      </div>
+
+      <p class="text-center text-sm sm:text-base text-stone-500 dark:text-stone-400 font-mono tracking-wider pt-1">
+        २०२४१२३१
+      </p>
+    </div>
+
+    <div class="mt-10 pt-8 border-t border-stone-200 dark:border-stone-800 flex flex-col items-center">
+      <button id="shareBtn" class="inline-flex items-center justify-center gap-2.5 px-6 py-3 rounded-full bg-stone-900 hover:bg-stone-800 dark:bg-amber-600 dark:hover:bg-amber-500 text-white font-medium text-base shadow-md hover:shadow-lg transition duration-200 active:scale-95 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 dark:focus:ring-offset-stone-900">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+        </svg>
+        <span>Share</span>
+      </button>
+
+      <!-- Toast Feedback Message -->
+      <div id="toast" class="mt-3 text-xs sm:text-sm font-medium text-emerald-700 dark:text-emerald-400 opacity-0 transition-opacity duration-300 pointer-events-none text-center">
+        Link copied to clipboard!
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // Theme Management (Light / Dark)
+    const htmlElem = document.documentElement;
+    const themeToggleBtn = document.getElementById('themeToggleBtn');
+    const themeLabel = document.getElementById('themeLabel');
+
+    function updateThemeUI(isDark) {
+      if (isDark) {
+        htmlElem.classList.add('dark');
+        htmlElem.classList.remove('light');
+        themeLabel.textContent = 'Light Mode';
+      } else {
+        htmlElem.classList.remove('dark');
+        htmlElem.classList.add('light');
+        themeLabel.textContent = 'Dark Mode';
+      }
+    }
+
+    // Check system preference initially
+    const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    updateThemeUI(systemPrefersDark);
+
+    themeToggleBtn.addEventListener('click', () => {
+      const isCurrentlyDark = htmlElem.classList.contains('dark');
+      updateThemeUI(!isCurrentlyDark);
+    });
+
+    // Share & Copy Handler
+    const shareBtn = document.getElementById('shareBtn');
+    const toast = document.getElementById('toast');
+
+    function showToast(message) {
+      toast.textContent = message;
+      toast.classList.remove('opacity-0');
+      toast.classList.add('opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('opacity-100');
+        toast.classList.add('opacity-0');
+      }, 3000);
+    }
+
+    function fallbackCopy(text) {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      textArea.style.position = "fixed";
+      textArea.style.top = "0";
+      textArea.style.left = "0";
+      textArea.style.opacity = "0";
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+      try {
+        const successful = document.execCommand('copy');
+        if (successful) {
+          showToast('Link copied to clipboard!');
+        } else {
+          showToast('Could not copy link');
+        }
+      } catch (err) {
+        showToast('Could not copy link');
+      }
+      document.body.removeChild(textArea);
+    }
+
+    shareBtn.addEventListener('click', async () => {
+      const shareData = {
+        title: 'इतरत्र – अन्यथा – elsewhere आणि.. Appreciation..',
+        text: 'इतरत्र – अन्यथा – elsewhere आणि.. Appreciation..: Before dreaming of that ‘elsewhere’, it is always better to ‘appreciate’ what one has; in the present.',
+        url: window.location.href
+      };
+
+      if (navigator.share) {
+        try {
+          await navigator.share(shareData);
+        } catch (err) {
+          if (err.name !== 'AbortError') {
+            fallbackCopy(window.location.href);
+          }
+        }
+      } else {
+        fallbackCopy(window.location.href);
+      }
+    });
+  </script>
+</body>
+</html>
