@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>इतरत्र – अन्यथा – elsewhere आणि.. Appreciation..</title>
   
-  <!-- IBM Plex Sans & IBM Plex Sans Devanagari for clean, beautiful bilingual Marathi & English typography -->
+  <!-- IBM Plex Sans & IBM Plex Sans Devanagari for clean, elegant bilingual Marathi and English typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:wght@300;400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
@@ -19,14 +19,6 @@
         extend: {
           fontFamily: {
             ibm: ['"IBM Plex Sans Devanagari"', '"IBM Plex Sans"', 'sans-serif'],
-          },
-          colors: {
-            page: {
-              light: '#fbf9f5',
-              card: '#ffffff',
-              dark: '#121417',
-              darkcard: '#1a1d24'
-            }
           }
         }
       }
@@ -36,8 +28,8 @@
   <style>
     body {
       font-family: 'IBM Plex Sans Devanagari', 'IBM Plex Sans', sans-serif;
-      word-break: normal;
-      overflow-wrap: break-word;
+      word-break: keep-all;
+      overflow-wrap: normal;
       hyphens: none;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
@@ -49,7 +41,7 @@
       text-justify: inter-word;
     }
 
-    /* Subtle animated SVG keyframes */
+    /* Animated SVG Keyframes */
     @keyframes pulseGlow {
       0%, 100% { opacity: 0.75; transform: scale(1); }
       50% { opacity: 1; transform: scale(1.06); }
@@ -92,9 +84,10 @@
     }
   </style>
 </head>
-<body class="bg-[#faf7f2] dark:bg-[#111317] text-[#292524] dark:text-[#e7e5e4] min-h-screen py-6 sm:py-12 px-4 sm:px-6 flex flex-col items-center justify-between">
+<body class="bg-[#faf7f2] dark:bg-[#111317] text-[#292524] dark:text-[#e7e5e4] min-h-screen py-6 sm:py-12 px-4 sm:px-6 flex flex-col items-center">
 
-  <header class="w-full max-w-2xl flex justify-end mb-4">
+  <!-- Top subtle theme toggle button -->
+  <div class="w-full max-w-2xl flex justify-end mb-4">
     <button id="themeToggleBtn" aria-label="Toggle theme" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-medium bg-stone-200/80 dark:bg-stone-800 text-stone-700 dark:text-stone-300 hover:bg-stone-300 dark:hover:bg-stone-700 shadow-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-amber-500/50">
       <span id="themeIcon">
         <svg class="w-4 h-4 hidden dark:inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 9h-1m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
@@ -102,10 +95,12 @@
       </span>
       <span id="themeLabel">Dark Mode</span>
     </button>
-  </header>
+  </div>
 
+  <!-- Main content card -->
   <main class="w-full max-w-2xl bg-white/95 dark:bg-[#1a1d24]/95 rounded-2xl shadow-xl shadow-stone-200/60 dark:shadow-black/50 border border-stone-200/70 dark:border-stone-800/80 p-6 sm:p-10 md:p-12 transition-colors duration-300">
     
+    <!-- Light colorful animated SVG representing title: Present / Appreciation vs Elsewhere -->
     <div class="w-full flex justify-center mb-8 sm:mb-10">
       <svg class="w-full max-w-md h-auto" viewBox="0 0 520 180" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="इतरत्र आणि Appreciation कलात्मक चित्रण">
         <defs>
@@ -132,52 +127,50 @@
           </filter>
         </defs>
 
-        <!-- Ambient background aura -->
+        <!-- Ambient aura -->
         <ellipse cx="260" cy="90" rx="210" ry="70" fill="url(#cloudGrad)" />
 
         <!-- Horizon connecting Present and Elsewhere -->
         <path d="M 50 120 Q 260 95 470 120" stroke="#cbd5e1" class="dark:stroke-stone-700" stroke-width="1.8" stroke-dasharray="3 4" opacity="0.6" />
         
-        <!-- Animated Connecting Stream (Thoughts drifting from Here to Elsewhere) -->
+        <!-- Animated connecting thought beam -->
         <path d="M 140 100 C 200 65, 320 65, 380 98" stroke="#f59e0b" stroke-width="2" fill="none" class="anim-beam" filter="url(#softGlow)" />
 
         <!-- Left Node: 'Here & Now' / कृतज्ञतेचा आधार (Appreciation & Present Light) -->
         <g class="anim-glow" style="transform-origin: 140px 100px;">
           <circle cx="140" cy="100" r="46" fill="url(#sunGlow)" />
           <circle cx="140" cy="100" r="22" fill="url(#presentGrad)" />
-          <!-- Inner warm lotus/spark motif -->
           <circle cx="140" cy="100" r="10" fill="#fef3c7" />
           <path d="M 140 85 L 140 115 M 125 100 L 155 100" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.9" />
           <circle cx="140" cy="100" r="3" fill="#d97706" />
         </g>
         
-        <!-- Gentle floating particles around appreciation -->
+        <!-- Gentle floating particles -->
         <circle cx="112" cy="74" r="3" fill="#f59e0b" class="anim-float-1" opacity="0.8" />
         <circle cx="170" cy="80" r="2.5" fill="#10b981" class="anim-float-2" opacity="0.85" />
         <circle cx="155" cy="126" r="3" fill="#fcd34d" class="anim-float-1" opacity="0.75" />
 
-        <!-- Right Node: 'Elsewhere' / दूरवरचे स्वप्न, अन्यत्र (Distant Horizon & Discovery) -->
+        <!-- Right Node: 'Elsewhere' / दूरवरचे स्वप्न, अन्यत्र -->
         <g class="anim-float-1" style="transform-origin: 380px 100px;">
-          <!-- Distant rings / ripples -->
           <circle cx="380" cy="100" r="34" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="4 4" fill="none" opacity="0.5" />
           <circle cx="380" cy="100" r="24" fill="url(#elsewhereGrad)" opacity="0.9" />
-          <!-- Star/Compass marker in elsewhere -->
           <path d="M 380 88 L 382.5 97.5 L 392 100 L 382.5 102.5 L 380 112 L 377.5 102.5 L 368 100 L 377.5 97.5 Z" fill="#ffffff" />
         </g>
 
-        <!-- Gentle clouds / wandering mirage paths -->
+        <!-- Floating distant clouds -->
         <g class="anim-float-2" opacity="0.65">
           <ellipse cx="260" cy="62" rx="42" ry="12" fill="#c084fc" opacity="0.3" />
           <circle cx="276" cy="56" r="8" fill="#818cf8" opacity="0.35" />
           <circle cx="248" cy="58" r="9" fill="#38bdf8" opacity="0.3" />
         </g>
 
-        <!-- Artistic Sanskrit / Symbolic Accents -->
+        <!-- Text labels inside graphic -->
         <text x="140" y="148" text-anchor="middle" font-size="11.5" font-family="'IBM Plex Sans Devanagari', sans-serif" font-weight="600" fill="#059669" class="dark:fill-emerald-400">आहे ते • कृतज्ञता</text>
         <text x="380" y="148" text-anchor="middle" font-size="11.5" font-family="'IBM Plex Sans', sans-serif" font-weight="500" fill="#6366f1" class="dark:fill-indigo-300">इतरत्र • elsewhere</text>
       </svg>
     </div>
 
+    <!-- Title and Subtitle -->
     <div class="text-center mb-8 space-y-2">
       <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-stone-900 dark:text-stone-100 leading-snug">
         इतरत्र – अन्यथा – elsewhere आणि..
@@ -187,7 +180,8 @@
       </p>
     </div>
 
-    <div class="space-y-5 text-base sm:text-lg leading-relaxed text-stone-800 dark:text-stone-200">
+    <!-- Main Body Content: Generous font size (1.25rem / 20px) with comfortable line-height (1.85) -->
+    <div class="space-y-6 text-[1.2rem] sm:text-[1.25rem] leading-[1.85] text-stone-800 dark:text-stone-200">
       <p class="body-justified">
         मानसिक स्वास्थ्य मिळवण्याच्या प्रवासात ‘जे आहे ते; जसे आहे तसे’ स्वीकारण्याला खूप महत्व आहे. त्यासाठी अंगी मुरवलेली ‘कृतज्ञ राहण्याची’ सवय या मार्गावर कोणालाही खूप पुढे घेऊन जाते.
       </p>
@@ -196,7 +190,7 @@
         कृतज्ञतेच्या या प्रवासाची पहिली पायरी आहे ‘appreciation’. अर्थात ‘आहे त्या’ गोष्टीचा आनंद लुटणे किंवा एखाद्या व्यक्तीचे/गोष्टीचे/परिस्थितीचे महत्त्व ओळखणे, त्याची किंमत जोखणे.
       </p>
 
-      <div class="text-center text-amber-600 dark:text-amber-500 text-lg sm:text-xl tracking-widest py-3 select-none" aria-hidden="true">
+      <div class="text-center text-amber-600 dark:text-amber-500 text-xl tracking-widest py-3 select-none" aria-hidden="true">
         ⛯⛯⛯
       </div>
 
@@ -224,7 +218,8 @@
         थोडक्यात, वर्तमानात अडचणी दिसल्या/जाणवल्या की साहजिक मनात येणाऱ्या इतरत्र, अन्यत्र, अन्यथा, elsewhere या शब्दांवर घाईत काही कृती करण्यापूर्वी जे आहे त्याबद्दल वर्तमानात राहून नीट चिंतन करण्यापासून सुरुवात करणे श्रेयस्कर.
       </p>
 
-      <div class="my-8 py-5 px-4 bg-stone-100/70 dark:bg-stone-800/40 rounded-xl space-y-2.5 text-center">
+      <!-- Centered proverbs -->
+      <div class="my-8 py-5 px-4 bg-stone-100/70 dark:bg-stone-800/40 rounded-xl space-y-3 text-center">
         <p class="font-medium text-stone-900 dark:text-stone-100">‘दूरून डोंगर साजरे’</p>
         <p class="font-medium text-stone-900 dark:text-stone-100">‘हातचे सोडून पळत्यामागे धावण्यात हशील नाही’</p>
         <p class="font-medium text-stone-900 dark:text-stone-100">‘तेलही गेले, तूपही गेले, हाती उरले धुपाटणे’</p>
@@ -235,33 +230,35 @@
         या म्हणींचा ‘भावार्थ’ - message between the lines म्हणजे appreciation!
       </p>
 
+      <!-- Centered and italics quote -->
       <p class="text-center italic text-stone-700 dark:text-stone-300 py-2">
         Before dreaming of that ‘elsewhere’, it is always better to ‘appreciate’ what one has; in the present.
       </p>
 
-      <div class="text-center text-amber-600 dark:text-amber-500 text-lg sm:text-xl tracking-widest pt-3 pb-1 select-none" aria-hidden="true">
+      <div class="text-center text-amber-600 dark:text-amber-500 text-xl tracking-widest pt-3 pb-1 select-none" aria-hidden="true">
         ⛯⛯⛯
       </div>
 
-      <p class="text-center text-sm sm:text-base text-stone-500 dark:text-stone-400 font-mono tracking-wider pt-1">
+      <p class="text-center text-base sm:text-lg text-stone-500 dark:text-stone-400 font-mono tracking-wider pt-1">
         २०२४१२३१
       </p>
     </div>
-
-    <div class="mt-10 pt-8 border-t border-stone-200 dark:border-stone-800 flex flex-col items-center">
-      <button id="shareBtn" class="inline-flex items-center justify-center gap-2.5 px-6 py-3 rounded-full bg-stone-900 hover:bg-stone-800 dark:bg-amber-600 dark:hover:bg-amber-500 text-white font-medium text-base shadow-md hover:shadow-lg transition duration-200 active:scale-95 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 dark:focus:ring-offset-stone-900">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
-        </svg>
-        <span>Share</span>
-      </button>
-
-      <!-- Toast Feedback Message -->
-      <div id="toast" class="mt-3 text-xs sm:text-sm font-medium text-emerald-700 dark:text-emerald-400 opacity-0 transition-opacity duration-300 pointer-events-none text-center">
-        Link copied to clipboard!
-      </div>
-    </div>
   </main>
+
+  <!-- Share button at the very bottom of the page -->
+  <div class="w-full max-w-2xl mt-8 mb-6 flex flex-col items-center">
+    <button id="shareBtn" class="inline-flex items-center justify-center gap-2.5 px-7 py-3 rounded-full bg-stone-900 hover:bg-stone-800 dark:bg-amber-600 dark:hover:bg-amber-500 text-white font-medium text-base shadow-md hover:shadow-lg transition duration-200 active:scale-95 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 dark:focus:ring-offset-stone-900">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+      </svg>
+      <span>Share</span>
+    </button>
+
+    <!-- Toast Feedback Message -->
+    <div id="toast" class="mt-3 text-sm font-medium text-emerald-700 dark:text-emerald-400 opacity-0 transition-opacity duration-300 pointer-events-none text-center">
+      Link copied to clipboard!
+    </div>
+  </div>
 
   <script>
     // Theme Management (Light / Dark)
@@ -281,7 +278,7 @@
       }
     }
 
-    // Check system preference initially
+    // Default to system preference
     const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
     updateThemeUI(systemPrefersDark);
 
